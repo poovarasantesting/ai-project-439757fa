@@ -1,14 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "@/components/ui/toaster";
-import ContactPage from "./pages/Contact";
+import RegisterPage from "@/pages/RegisterPage";
 
-export default function App() {
+function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<ContactPage />} />
+        <Route path="/" element={<RegisterPage />} />
       </Routes>
       <Toaster />
     </BrowserRouter>
   );
 }
+
+export default App;
